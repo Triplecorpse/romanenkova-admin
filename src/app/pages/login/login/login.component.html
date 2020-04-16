@@ -1,0 +1,22 @@
+<div class="login-wrapper">
+    <div class="column">
+        <div class="blur"></div>
+        <form class="form" #loginForm="ngForm" [formGroup]="formGroup" (ngSubmit)="submit(loginForm)">
+            <mat-card>
+                <div class="form-input">
+                    <mat-form-field>
+                        <input matInput placeholder="Ім'я користувача" formControlName="username">
+                    </mat-form-field>
+                </div>
+                <div class="form-input">
+                    <mat-form-field>
+                        <input matInput placeholder="Пароль" type="password" formControlName="password">
+                    </mat-form-field>
+                </div>
+                <div class="form-input button">
+                    <button mat-flat-button color="primary" type="submit">OK</button>
+                </div>
+            </mat-card>
+        </form>
+    </div>
+</div>
